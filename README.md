@@ -10,7 +10,8 @@
     <h1>A Lenda do Tesouro Perdido</h1>
   </header>
   <main>
-    <img src="mapa-tesouro.jpg" alt="Mapa do Tesouro">
+    <img src="![Uploading image.png…]()
+" alt="Mapa do Tesouro">
     <p>Embarque em uma aventura épica para encontrar o tesouro perdido de um pirata lendário! Navegue por mares traiçoeiros, enfrente perigosas criaturas marinhas e desvende os mistérios de uma ilha deserta.</p>
     <button id="btn-explorar">Começar a Aventura</button>
   </main>
