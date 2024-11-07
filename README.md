@@ -1,23 +1,82 @@
-# filme-facil
-<!DOCTYPE html>
-<html>
-<head>
-  <title>A Lenda do Tesouro Perdido</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>A Lenda do Tesouro Perdido</h1>
-  </header>
-  <main>
-    <img src="![Uploading image.png…]()
-" alt="Mapa do Tesouro">
-    <p>Embarque em uma aventura épica para encontrar o tesouro perdido de um pirata lendário! Navegue por mares traiçoeiros, enfrente perigosas criaturas marinhas e desvende os mistérios de uma ilha deserta.</p>
-    <button id="btn-explorar">Começar a Aventura</button>
-  </main>
-  <footer>
-    <p>&copy; 2023 - Todos os direitos reservados</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+ # Importações
+import turtle
+
+# Criação da janela
+janela = turtle.Screen()
+janela.title("Leão")
+janela.bgcolor("yellow")
+
+# Criação do corpo do leão
+corpo = turtle.Turtle()
+corpo.shape("circle")
+corpo.color("brown")
+corpo.penup()
+corpo.goto(0, 0)
+corpo.pendown()
+corpo.circle(50)
+
+# Criação da cabeça do leão
+cabeca = turtle.Turtle()
+cabeca.shape("circle")
+cabeca.color("brown")
+cabeca.penup()
+cabeca.goto(0, 50)
+cabeca.pendown()
+cabeca.circle(25)
+
+# Criação dos olhos do leão
+olho_esquerdo = turtle.Turtle()
+olho_esquerdo.shape("circle")
+olho_esquerdo.color("black")
+olho_esquerdo.penup()
+olho_esquerdo.goto(-10, 60)
+olho_esquerdo.pendown()
+olho_esquerdo.circle(5)
+
+olho_direito = turtle.Turtle()
+olho_direito.shape("circle")
+olho_direito.color("black")
+olho_direito.penup()
+olho_direito.goto(10, 60)
+olho_direito.pendown()
+olho_direito.circle(5)
+
+# Criação do nariz do leão
+nariz = turtle.Turtle()
+nariz.shape("triangle")
+nariz.color("black")
+nariz.penup()
+nariz.goto(0, 55)
+nariz.pendown()
+
+# Criação da boca do leão
+boca = turtle.Turtle()
+boca.shape("arc")
+boca.color("black")
+boca.penup()
+boca.goto(-20, 45)
+boca.pendown()
+boca.setheading(270)
+boca.circle(20, 180)
+
+# Criação da juba do leão
+juba = turtle.Turtle()
+juba.shape("circle")
+juba.color("yellow")
+juba.penup()
+juba.goto(0, 70)
+juba.pendown()
+juba.circle(70)
+
+# Criação da cauda do leão
+cauda = turtle.Turtle()
+cauda.shape("line")
+cauda.color("brown")
+cauda.penup()
+cauda.goto(0, 0)
+cauda.pendown()
+cauda.setheading(270)
+cauda.forward(100)
+
+# Exibição do desenho
+janela.mainloop()
